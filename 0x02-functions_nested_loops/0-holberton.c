@@ -7,6 +7,7 @@
 int main(void)
 {
 char c;
+
 char phrase[] = "Holberton";
 for (c = 0; c < 9; c++)
 _putchar(phrase[c]);
