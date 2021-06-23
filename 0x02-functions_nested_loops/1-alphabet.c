@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - entry point
- *description: show the alphabet
+ *Description: show the alphabet
  * Return
  */
 void print_alphabet(void)
