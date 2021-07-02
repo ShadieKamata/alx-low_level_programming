@@ -1,31 +1,30 @@
 #include "holberton.h"
 
 /**
- *  * rot13 -function that  encodes a string using rot13.
- *   * @s: pointer to char
- *    * Return: char
- *     */
+* rot13 - encode string
+* @str: input string
+*
+* Description: encodes a string using rot13
+* Return: always (0)
+*/
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
-	int i = 0;
-			int j = 0;
-				char *l = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-					char *r13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *c = str;
+	int i = 0, j;
+	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-						while (*(s + i) != '\0')
-								{
-											while (*(l + j) != '\0')
-														{
-																		if (*s(s + i) == *(l + j))
-																						{
-																											*(s + i) = *(r13 + j);
-																															break;
-																																		}
-																					j++;
-																							}
-													j = 0;
-															i++;
-																}
-							return (str);
+	for (; str[i] != '\0'; i++)
+	{
+		for (j = 0; j <= 52; j++)
+		{
+			if (s[j] == str[i])
+			{
+				str[i] = s1[j];
+				break
+			}
+		}
+	}
+	return (c);
 }
