@@ -1,18 +1,18 @@
 #include "holberton.h"
 
 /**
-* rot13 - encode string
-* @str: input string
-*
-* Description: encodes a string using rot13
-* Return: always (0)
-*/
+ * rot13 - encode string
+ * @str: input string
+ *
+ * Description: encodes a string using rot13
+ * Return: always (0)
+ */
 
 char *rot13(char *str)
 {
 	char *c = str;
 	int i = 0, j;
-	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char s[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (; str[i] != '\0'; i++)
@@ -22,7 +22,7 @@ char *rot13(char *str)
 			if (s[j] == str[i])
 			{
 				str[i] = s1[j];
-				break
+				break;
 			}
 		}
 	}
