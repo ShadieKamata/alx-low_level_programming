@@ -4,7 +4,7 @@
  * leet - encode string
  * @str: input string
  *
- * Description: encode a string into 1337
+ * Description: encodes a string into 1337
  * Return: always 0
  */
 
