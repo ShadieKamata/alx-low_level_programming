@@ -1,15 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-int get_change(int amount);
-/**
- * main - entry point for change program
- *
- * @argc: arg counter, # of args passed
- * @argv: array of args passed
- *
- * Return: 0 for success, 1 for error
- */
-int main(int argc, char *argv[])
 {
   if (argc != 2)
     {
@@ -62,4 +50,3 @@ ocs++;
 }
 return (qs + ds + ns + tcs + ocs);
 }
-
