@@ -1,4 +1,4 @@
-#ifndef _FUNC_LIKE_MACRO_H
-#define _FUNC_LIKE_MACRO_H
-#define ABS(x) (((x) < 0) ? -(x) : (x))
-#endif /* _FUNC_LIKE_MACRO_H */
+#ifndef _SUM_H
+#define _SUM_H
+#define SUM(x, y) ((x) + (y))
+#endif
